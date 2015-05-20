@@ -2,18 +2,18 @@
 # Specific services to work with KNP Menu
 #
 
-parameters:
+# parameters:
 
-    flob.menu_extension.class: Flob\Bundle\FoundationBundle\Twig\MenuExtension
+#     flob.menu_extension.class: Flob\Bundle\FoundationBundle\Twig\MenuExtension
 
-services:
+# services:
 
-    flob.menu_extension:
-        class: %flob.menu_extension.class%
-        arguments:
-            - @twig
-            - @knp_menu.helper
-            - @knp_menu.matcher
-            - %flob.menu_extension.template%
-        tags:
-            - { name: twig.extension }
+#     flob.menu_extension:
+#         class: %flob.menu_extension.class%
+#         arguments:
+#             - @twig
+#             - @knp_menu.helper
+#             - @knp_menu.matcher
+#             - %flob.menu_extension.template%
+#         tags:
+#             - { name: twig.extension }
